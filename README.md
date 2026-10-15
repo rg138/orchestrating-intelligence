@@ -8,7 +8,12 @@ This package accompanies Chapter 11 and Appendix B of the book.
 - `example-input.json` — the six fictional delivery cases.
 - `expected/evidence-packet.json` — expected classifications and supporting observations.
 - `expected/review-draft.md` — the deterministic internal review draft.
-- `manuscript.md` — the complete book in editable plain-text Markdown.
+
+## Download the exercises
+
+Click **Code → Download ZIP** on this repository page, then extract the ZIP before running the commands below.
+
+The full book is sold separately and is not included in this repository.
 
 ## Run the example
 
