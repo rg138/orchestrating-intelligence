@@ -1,0 +1,125 @@
+{
+  "rule_version": "harbor-exercise-1",
+  "input_sha256": "9a227a8abd3e710bb4312c34f8171bfc35a8f62f1ba5de6310fb6e90ebb68747",
+  "as_of": "2030-04-16T09:30:00-07:00",
+  "business_date": "2030-04-16",
+  "counts": {
+    "CONFLICT": 1,
+    "EMPTY": 1,
+    "MISSING": 1,
+    "RECEIVED": 1,
+    "RECEIVED_LATE": 1,
+    "STALE": 1
+  },
+  "attention_items": 5,
+  "cases": [
+    {
+      "delivery_id": "A",
+      "business_date": "2030-04-16",
+      "deadline": "2030-04-16T09:00:00-07:00",
+      "allow_empty": false,
+      "owner": "Intake team",
+      "status": "RECEIVED",
+      "reason": "Qualifying arrival by deadline",
+      "evidence": [
+        {
+          "delivery_id": "A",
+          "business_date": "2030-04-16",
+          "received_at": "2030-04-16T08:42:00-07:00",
+          "record_count": 120,
+          "content_fingerprint": "example-a"
+        }
+      ]
+    },
+    {
+      "delivery_id": "B",
+      "business_date": "2030-04-16",
+      "deadline": "2030-04-16T09:00:00-07:00",
+      "allow_empty": false,
+      "owner": "Intake team",
+      "status": "MISSING",
+      "reason": "No arrival observed by cutoff",
+      "evidence": []
+    },
+    {
+      "delivery_id": "C",
+      "business_date": "2030-04-16",
+      "deadline": "2030-04-16T09:00:00-07:00",
+      "allow_empty": false,
+      "owner": "Supplier liaison",
+      "status": "STALE",
+      "reason": "No expected-date observation; other dates observed: 2030-04-15",
+      "evidence": [
+        {
+          "delivery_id": "C",
+          "business_date": "2030-04-15",
+          "received_at": "2030-04-16T08:51:00-07:00",
+          "record_count": 90,
+          "content_fingerprint": "example-c"
+        }
+      ]
+    },
+    {
+      "delivery_id": "D",
+      "business_date": "2030-04-16",
+      "deadline": "2030-04-16T09:00:00-07:00",
+      "allow_empty": false,
+      "owner": "Supplier liaison",
+      "status": "EMPTY",
+      "reason": "Zero records; empty delivery not permitted",
+      "evidence": [
+        {
+          "delivery_id": "D",
+          "business_date": "2030-04-16",
+          "received_at": "2030-04-16T08:55:00-07:00",
+          "record_count": 0,
+          "content_fingerprint": "example-d"
+        }
+      ]
+    },
+    {
+      "delivery_id": "E",
+      "business_date": "2030-04-16",
+      "deadline": "2030-04-16T09:00:00-07:00",
+      "allow_empty": false,
+      "owner": "Data operations",
+      "status": "CONFLICT",
+      "reason": "Multiple content versions or inconsistent count evidence",
+      "evidence": [
+        {
+          "delivery_id": "E",
+          "business_date": "2030-04-16",
+          "received_at": "2030-04-16T08:40:00-07:00",
+          "record_count": 80,
+          "content_fingerprint": "example-e1"
+        },
+        {
+          "delivery_id": "E",
+          "business_date": "2030-04-16",
+          "received_at": "2030-04-16T08:58:00-07:00",
+          "record_count": 82,
+          "content_fingerprint": "example-e2"
+        }
+      ]
+    },
+    {
+      "delivery_id": "F",
+      "business_date": "2030-04-16",
+      "deadline": "2030-04-16T09:00:00-07:00",
+      "allow_empty": false,
+      "owner": "Data operations",
+      "status": "RECEIVED_LATE",
+      "reason": "Qualifying arrival after deadline",
+      "evidence": [
+        {
+          "delivery_id": "F",
+          "business_date": "2030-04-16",
+          "received_at": "2030-04-16T09:17:00-07:00",
+          "record_count": 75,
+          "content_fingerprint": "example-f"
+        }
+      ]
+    }
+  ],
+  "unexpected_arrivals": []
+}

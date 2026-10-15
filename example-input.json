@@ -1,0 +1,91 @@
+{
+  "as_of": "2030-04-16T09:30:00-07:00",
+  "schedule": [
+    {
+      "delivery_id": "A",
+      "business_date": "2030-04-16",
+      "deadline": "2030-04-16T09:00:00-07:00",
+      "allow_empty": false,
+      "owner": "Intake team"
+    },
+    {
+      "delivery_id": "B",
+      "business_date": "2030-04-16",
+      "deadline": "2030-04-16T09:00:00-07:00",
+      "allow_empty": false,
+      "owner": "Intake team"
+    },
+    {
+      "delivery_id": "C",
+      "business_date": "2030-04-16",
+      "deadline": "2030-04-16T09:00:00-07:00",
+      "allow_empty": false,
+      "owner": "Supplier liaison"
+    },
+    {
+      "delivery_id": "D",
+      "business_date": "2030-04-16",
+      "deadline": "2030-04-16T09:00:00-07:00",
+      "allow_empty": false,
+      "owner": "Supplier liaison"
+    },
+    {
+      "delivery_id": "E",
+      "business_date": "2030-04-16",
+      "deadline": "2030-04-16T09:00:00-07:00",
+      "allow_empty": false,
+      "owner": "Data operations"
+    },
+    {
+      "delivery_id": "F",
+      "business_date": "2030-04-16",
+      "deadline": "2030-04-16T09:00:00-07:00",
+      "allow_empty": false,
+      "owner": "Data operations"
+    }
+  ],
+  "arrivals": [
+    {
+      "delivery_id": "A",
+      "business_date": "2030-04-16",
+      "received_at": "2030-04-16T08:42:00-07:00",
+      "record_count": 120,
+      "content_fingerprint": "example-a"
+    },
+    {
+      "delivery_id": "C",
+      "business_date": "2030-04-15",
+      "received_at": "2030-04-16T08:51:00-07:00",
+      "record_count": 90,
+      "content_fingerprint": "example-c"
+    },
+    {
+      "delivery_id": "D",
+      "business_date": "2030-04-16",
+      "received_at": "2030-04-16T08:55:00-07:00",
+      "record_count": 0,
+      "content_fingerprint": "example-d"
+    },
+    {
+      "delivery_id": "E",
+      "business_date": "2030-04-16",
+      "received_at": "2030-04-16T08:40:00-07:00",
+      "record_count": 80,
+      "content_fingerprint": "example-e1"
+    },
+    {
+      "delivery_id": "E",
+      "business_date": "2030-04-16",
+      "received_at": "2030-04-16T08:58:00-07:00",
+      "record_count": 82,
+      "content_fingerprint": "example-e2"
+    },
+    {
+      "delivery_id": "F",
+      "business_date": "2030-04-16",
+      "received_at": "2030-04-16T09:17:00-07:00",
+      "record_count": 75,
+      "content_fingerprint": "example-f"
+    }
+  ]
+}
